@@ -2,3 +2,4 @@ PyQt5
 pandas
 scikit-learn
 kagglehub
+matplotlib

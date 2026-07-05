@@ -51,4 +51,8 @@ def train_and_predict(df):
     # 4. Get predictions for the ENTIRE dataset so the GUI table can be fully populated
     predictions = model.predict(X_encoded)
     
-    return predictions
+    # 5. Extract top features driving churn
+    feature_importances = pd.Series(model.feature_importances_, index=X_train.columns)
+    top_features = feature_importances.sort_values(ascending=False).head(3).to_dict()
+    
+    return predictions, top_features
