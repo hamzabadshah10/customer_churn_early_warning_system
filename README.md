@@ -11,8 +11,6 @@ This project is an advanced machine learning application that predicts customer 
 - **Multi-Threaded Performance:** The UI remains completely responsive during data loading and model training.
 - **Export to CSV:** Easily save the fully analyzed results to a new CSV file for further reporting.
 
-## Screenshots
-*(Add 2-3 screenshots of the running PyQt5 application here, showcasing the dark mode, chart, and recommendation panel!)*
 
 ## Installation & Setup
 1. Create and activate a virtual environment (recommended).
