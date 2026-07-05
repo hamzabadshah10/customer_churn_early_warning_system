@@ -17,4 +17,7 @@ def get_clean_data():
     # We will use simple mapping for the target
     df['Churn'] = df['Churn'].map({'Yes': 1, 'No': 0})
     
+    # Ensure no rows with NaN values remain, which would crash the RandomForest model
+    df = df.dropna()
+    
     return df
